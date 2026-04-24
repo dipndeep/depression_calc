@@ -1,0 +1,10 @@
+{
+  "name": "depression-calc",
+  "version": "1.0.0",
+  "description": "Teen Depression Risk Calculator – XGBoost full-stack app",
+  "scripts": {
+    "dev:server": "cmd /c \"cd server && npm install && npm start\"",
+    "dev:client": "cmd /c \"cd client && npm run dev\"",
+    "install:server": "cmd /c \"cd server && npm install\""
+  }
+}
