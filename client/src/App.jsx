@@ -44,9 +44,9 @@ const FIELDS = [
 ];
 
 const INIT = {
-  age:'', gender:'Male', daily_social_media_hours:'', platform_usage:'Instagram',
-  sleep_hours:'', screen_time_before_sleep:'', academic_performance:'',
-  physical_activity:'', social_interaction_level:'Medium',
+  age: 0, gender:'Male', daily_social_media_hours: 0, platform_usage:'Instagram',
+  sleep_hours: 0, screen_time_before_sleep: 0, academic_performance: 0,
+  physical_activity: 0, social_interaction_level:'Medium',
   stress_level:5, anxiety_level:5, addiction_level:5,
 };
 
@@ -106,7 +106,7 @@ function NumberStepper({ id, value, min, max, step, placeholder, unit, dark, onC
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"><path d="M12 5v14M5 12h14"/></svg>
         </button>
       </div>
-      <span className={`text-[10px] mt-0.5 block ${dark ? 'text-gray-500' : 'text-gray-400'}`}>{unit}</span>
+      <span className={`text-[10px] mt-0.5 block ${dark ? 'text-gray-500' : 'text-gray-400'}`}>{unit} · Rentang: {min}–{max}</span>
     </div>
   );
 }
